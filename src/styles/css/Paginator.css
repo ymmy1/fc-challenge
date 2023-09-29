@@ -1,0 +1,36 @@
+.paginator {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  background: #059669;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: #10b981;
+}
+button:disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+}
+
+select {
+  font-weight: bold;
+  width: 50px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+select option {
+  font-weight: bold;
+}/*# sourceMappingURL=Paginator.css.map */

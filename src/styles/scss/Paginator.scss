@@ -1,0 +1,40 @@
+@import 'variables';
+
+.paginator {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  background: $green-1;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  &:hover {
+    background: $green-2;
+  }
+  &:disabled {
+    background: $gray-5;
+    color: $gray-3;
+  }
+}
+
+select {
+  font-weight: bold;
+  width: 50px;
+  text-align: center;
+  border: 1px solid $gray-4;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+
+  // option is a "replaced element". They are OS-dependent and are not part of the HTML/browser. It cannot be styled via CSS.
+  option {
+    font-weight: bold;
+  }
+}
