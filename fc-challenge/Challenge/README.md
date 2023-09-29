@@ -2,7 +2,7 @@
 
 In this coding test, you will create a simple interface that shows a list of client invoices. Please read this document to the end before getting started as it contains helpful notes on which tools are available to use. Here is a screenshot of the final design that you'll need to recreate.
 
-![Listing](fc-challenge/Challenge/screenshots/Design%20challenge-1.jpg)
+![Listing](screenshots/Design%20challenge-1.jpg)
 
 ### Requirements
 - [ ] Use any JS and CSS frameworks that you are comfortable with
@@ -15,7 +15,7 @@ In this coding test, you will create a simple interface that shows a list of cli
 - [ ] Implement dropdown including open/close JS logic
   - Make sure that clicking outside the dropdown, closes the dropdown.
   - Please attempt to create this without using any external libraries.
-  - ![Dropdown](fc-challenge/Challenge/screenshots/dropdown.png)
+  - ![Dropdown](screenshots/dropdown.png)
 
 ### Code Submission
 Please feel free to either email the code as a zip file or submit it to git repository (Github, Gitlab or BitBucket) and share the link.
