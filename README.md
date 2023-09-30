@@ -6,7 +6,7 @@
 * Contains Api loading Animation. *(Try on **Fast 3G** or **Slow 3G** throttling)*
 * Contains a **paginator** that will has a disabled animation while api is loading.
 * App is responsive on **Monitor**, **Tablet** and **Mobile screens**.
-* **View**, **Edit** and **Delete** dropdown menu options will reveal the email of the user.
+* **View**, **Edit**, and **Delete** dropdown menu options will reveal the email of the user.
 ### Loading Animation
 ![](./Readme/loading.jpg)
 ### Loading Avatar Animation
