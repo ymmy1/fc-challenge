@@ -11,11 +11,25 @@ import {
 } from './lib/customRandom';
 
 function InvoiceCard({ invoice, loading }) {
-  console.log(invoice);
-
   const [rInvoiceStatus, setRInvoiceStatus] = useState(null);
   const [rInvoiceAmount, setRInvoiceAmount] = useState(null);
   const [rInvoiceDate, setRInvoiceDate] = useState(null);
+  const [dropdownData, setDropdownData] = useState('');
+
+  const root = document.getElementById('root');
+  const handleDropdownClick = (email) => {
+    if (dropdownData.length) {
+      closeDropdown();
+    } else {
+      root.addEventListener('click', closeDropdown);
+      setDropdownData(email);
+    }
+  };
+
+  const closeDropdown = () => {
+    root.removeEventListener('click', closeDropdown);
+    setDropdownData('');
+  };
 
   useEffect(() => {
     randomInvoiceStatus(setRInvoiceStatus);
@@ -35,10 +49,13 @@ function InvoiceCard({ invoice, loading }) {
           <h4 className='username'>
             {invoice.first_name} {invoice.last_name}
           </h4>
-          <p className='settings'>
-            ⋯
-            <InvoiceDropdownMenu />
-          </p>
+          <div
+            onClick={() => handleDropdownClick(invoice.email)}
+            className='settings'
+          >
+            <span>...</span>
+            <InvoiceDropdownMenu dropdownData={dropdownData} />
+          </div>
         </header>
         <main>
           <div className='invoice_row'>

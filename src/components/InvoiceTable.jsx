@@ -44,7 +44,7 @@ function InvoiceTable() {
   return (
     <section className='invoiceTable'>
       {invoices.data?.slice(0, perPage).map((invoice, index) => (
-        <InvoiceCard invoice={invoice} loading={loading} index={index} />
+        <InvoiceCard invoice={invoice} loading={loading} key={index} />
       ))}
       <Paginator
         currentPageNumber={currentPageNumber}

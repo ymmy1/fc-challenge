@@ -40,19 +40,25 @@
   text-overflow: ellipsis;
 }
 .invoiceCard header .settings {
-  display: flex;
   position: relative;
-  justify-content: center;
-  color: white;
-  font-size: 16px;
-  border-radius: 50%;
   transition: all 0.3s ease;
-  width: 25px;
-  height: 25px;
-  margin: auto;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
 }
-.invoiceCard header .settings:hover {
+.invoiceCard header .settings span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+  line-height: 1.9;
+  font-size: 25px;
+}
+.invoiceCard header .settings span:hover {
   background: #10b981;
 }
 .invoiceCard main {

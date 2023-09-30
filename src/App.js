@@ -3,7 +3,7 @@ import InvoiceTable from './components/InvoiceTable';
 
 function App() {
   return (
-    <div className='App'>
+    <div id='App' className='App'>
       <header className='app_header'>
         <h1>Monthly Bookkeeping</h1>
         <p>List of paid and outstanding invoices</p>
