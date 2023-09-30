@@ -40,11 +40,20 @@
   text-overflow: ellipsis;
 }
 .invoiceCard header .settings {
-  margin-top: 0;
-  align-items: center;
   display: flex;
+  position: relative;
+  justify-content: center;
   color: white;
-  font-size: 30px;
+  font-size: 16px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  cursor: pointer;
+}
+.invoiceCard header .settings:hover {
+  background: #10b981;
 }
 .invoiceCard main {
   padding: 15px;

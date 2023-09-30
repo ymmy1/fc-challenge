@@ -1,0 +1,37 @@
+.invoiceDropdownMenu.hidden {
+  opacity: 0;
+  z-index: -9999;
+}
+
+.invoiceDropdownMenu {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 15px 15px -6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 5px 0;
+  top: 100%;
+  right: 0;
+  transition: all 3s ease;
+}
+.invoiceDropdownMenu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.invoiceDropdownMenu ul li {
+  list-style-type: none;
+  width: 80px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  color: #374151;
+  font-size: 16px;
+  cursor: pointer;
+}
+.invoiceDropdownMenu ul li:hover {
+  background: #e5e7eb;
+}
+.invoiceDropdownMenu ul .invoiceDropdownMenu_deleteOption {
+  color: #dd1c1a;
+}/*# sourceMappingURL=invoiceDropdownMenu.css.map */

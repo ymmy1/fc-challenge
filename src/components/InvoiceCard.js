@@ -1,7 +1,8 @@
 import '../styles/css/InvoiceCard.css';
 import defaultUserSrc from '../assets/defaultUser.png';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
+import { InvoiceDropdownMenu } from './InvoiceDropdownMenu';
 
 import {
   randomInvoiceStatus,
@@ -34,11 +35,14 @@ function InvoiceCard({ invoice, loading }) {
           <h4 className='username'>
             {invoice.first_name} {invoice.last_name}
           </h4>
-          <p className='settings'>...</p>
+          <p className='settings'>
+            ⋯
+            <InvoiceDropdownMenu />
+          </p>
         </header>
         <main>
           <div className='invoice_row'>
-            <span>Last Invoice</span>
+            <span>Last invoice</span>
             <span>{rInvoiceDate}</span>
           </div>
           <hr />
