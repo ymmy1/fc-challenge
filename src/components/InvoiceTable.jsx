@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
 import InvoiceCard from './InvoiceCard';
 import Paginator from './Paginator';
 import * as DEFAULT from './defaults';
-
 import '../styles/css/InvoiceTable.css';
 
 function InvoiceTable() {
@@ -32,7 +30,7 @@ function InvoiceTable() {
         setLoading((prev) => !prev);
       })
       .catch((error) => {
-        console.error('There was a problem with the fetch operation:', error);
+        console.error('There was a problem with fetch:', error);
       });
   }
 

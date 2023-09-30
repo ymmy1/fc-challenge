@@ -1,9 +1,7 @@
 import '../styles/css/InvoiceCard.css';
 import defaultUserSrc from '../assets/defaultUser.png';
-import { useState, useEffect } from 'react';
-
+import React, { useState, useEffect } from 'react';
 import { InvoiceDropdownMenu } from './InvoiceDropdownMenu';
-
 import {
   randomInvoiceStatus,
   randomInvoiceAmount,
