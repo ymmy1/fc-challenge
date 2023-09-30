@@ -4,11 +4,11 @@ import InvoiceTable from './components/InvoiceTable';
 function App() {
   return (
     <div className='App'>
-      <header>
+      <header className='app_header'>
         <h1>Monthly Bookkeeping</h1>
         <p>List of paid and outstanding invoices</p>
       </header>
-      <main>
+      <main className='app_main'>
         <InvoiceTable />
       </main>
     </div>

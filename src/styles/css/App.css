@@ -5,11 +5,14 @@
   padding: 5%;
   box-sizing: border-box;
 }
-.App header h1 {
+.App .app_header {
+  margin-bottom: 60px;
+}
+.App .app_header h1 {
   margin: 0;
   color: #374151;
 }
-.App header p {
+.App .app_header p {
   margin-top: 8px;
   color: #6b7280;
 }/*# sourceMappingURL=App.css.map */

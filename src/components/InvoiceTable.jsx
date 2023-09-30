@@ -4,6 +4,8 @@ import InvoiceCard from './InvoiceCard';
 import Paginator from './Paginator';
 import * as DEFAULT from './defaults';
 
+import '../styles/css/InvoiceTable.css';
+
 function InvoiceTable() {
   const [invoices, setInvoices] = useState(DEFAULT.INVOICES);
   const [loading, setLoading] = useState(DEFAULT.LOADING);
@@ -24,7 +26,6 @@ function InvoiceTable() {
         return response.json();
       })
       .then((jsonData) => {
-        console.log(jsonData);
         setInvoices(jsonData);
         setTotalPages(jsonData.total_pages);
         setPerPage(jsonData.per_page);
@@ -41,16 +42,17 @@ function InvoiceTable() {
   }, [currentPageNumber]);
 
   return (
-    <>
-      {loading ? <h1>LOADING API</h1> : <p>{JSON.stringify(invoices.data)}</p>}
-      <InvoiceCard />
+    <section className='invoiceTable'>
+      {invoices.data?.slice(0, perPage).map((invoice, index) => (
+        <InvoiceCard invoice={invoice} loading={loading} index={index} />
+      ))}
       <Paginator
         currentPageNumber={currentPageNumber}
         setCurrentPageNumber={setCurrentPageNumber}
         totalPages={totalPages}
         loading={loading}
       />
-    </>
+    </section>
   );
 }
 

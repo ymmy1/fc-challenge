@@ -1,0 +1,92 @@
+@import './variables';
+
+.loading {
+  filter: blur(3px);
+}
+.invoiceCard {
+  display: flex;
+  width: calc((100% - 60px) / 3);
+  flex-grow: 1;
+  min-width: 278px;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.1s ease;
+  -webkit-box-shadow: 0px 15px 15px -6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 15px 15px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 15px -6px rgba(0, 0, 0, 0.1);
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $green-1;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 80px;
+    align-items: center;
+    gap: 10px;
+    .user_picture {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .username {
+      color: white;
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .settings {
+      margin-top: 0;
+      align-items: center;
+      display: flex;
+      color: white;
+      font-size: 30px;
+    }
+  }
+  main {
+    padding: 15px;
+    color: $gray-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+    .invoice_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 0;
+      .amountUSD {
+        color: $gray-1;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-direction: row;
+      }
+      .status {
+        font-size: 10px;
+        border-radius: 10px;
+        padding: 0 5px;
+      }
+      .paid {
+        background: $green-3;
+        color: $green-2;
+      }
+      .overdue {
+        background: $red-2;
+        color: $red-1;
+      }
+    }
+    hr {
+      height: 2px;
+      width: 100%;
+      background: $gray-6;
+      border: none;
+    }
+  }
+}

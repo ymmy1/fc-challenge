@@ -6,7 +6,8 @@
   height: 100vh;
   padding: 5%;
   box-sizing: border-box;
-  header {
+  .app_header {
+    margin-bottom: 60px;
     h1 {
       margin: 0;
       color: $gray-1;

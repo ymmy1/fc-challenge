@@ -6,7 +6,6 @@ function Paginator({
   totalPages,
   loading,
 }) {
-  console.log(loading);
   const options = [];
   for (let i = 1; i <= totalPages; i++) {
     options.push(
